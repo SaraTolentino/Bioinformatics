@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#Define input file path
+input_file= "/home/sara-tolentino/Downloads/pandas.tsv"
+
+output_dir="/home/sara-tolentino/Desktop/Assigment3"
+mkdir -p "$output_dir"
+
+if [ ! -f "$input_file"]: then
+   echo "Error: File $input_file not found!"
+   exit 1
+fi
+
+# 1. Remove all lines containing "zoo" and save to panda_zoo.txt
+sed '/[Zz]oo/d' "$input_file">"$output_dir/pandas_zoo.txt
+
+#2 Sort pandas by sex and output name, age, sex
+awk -F'\t' '{print $1,$2,$3}' "input_file" |  sort -k3 > "$output_dir/sorte_pandas.txt"
+
+#3. Extract zoo/reserve names, sort alphabetically
+grep -i 'zoo' "$input_file" | awk -F'\t' '{print $NF}'| sort> "output_dir/panda_zoos_A2Z.txt"
+
+#4 Replace "male" with "M" and "female" with "F"
+sed 's/male/M/g: s/female/F/g' "$input_file" > "$output_dir/panda_m_f.txt"
+
+#5 Count how many female pandas were born in october
+grep -1 "female" "$input_file" | grep -1 "October" | wc -1
+
+#6 Print pandas.tsv with line numbers prefixed
+nl "$input_file" > "output_dir/panda_names.txt"
+
+#7 Print lines 1,6 and 17 to lines_1_6_17.txt
+sed -n -e '1p' -e '6p' -e '17p' "$input_fle" > "output_dir/lines_1_6_17.txt"
+
+#8 Extract lines containing "x" or "X" and save to x_lines.txt
+grep -i 'x' "$input_file" > "output_dir/x_lines.txt"
+
+#9 FInd unique panda locations and save to unique_places.txt
+awk -F'\t' '{print $NF}' "$input_file"|sort|uniq -u > "output_dir/unique_places.txt"
+
+#10. Sort pandas aged 10 and younger from youngest to oldest, savin to young_pandas.txt
+awk -F'\t' '$2<= 10 {print $1, $2}' "$input_file"| sort -nk2 > "output_dir/young_pandas.txt"
