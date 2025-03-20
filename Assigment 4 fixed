@@ -1,0 +1,40 @@
+Assigment 4
+
+#Question 1
+makeblastdb -in /home/sara-tolentino/database_mystery_transcripts.fasta -dbtype nucl -out /home/sara-tolentino/mystery_transcripts_db
+
+#Question 2
+makeblastdb -in /home/sara-tolentino/database_mystery_proteins.fasta -dbtype prot -out /home/sara-tolentino/mystery_proteins_db
+
+#Question 3
+blastn -query /home/sara-tolentino/query_mystery_nucleotide.fasta -db /home/sara-tolentino/mystery_transcripts_db -evalue 1e-3 -max_target_seqs 5 -outfmt 7 -out /home/sara-tolentino/nucleotide_blast_results.txt
+
+#Question 4
+awk '$3 >= 99 {print $2}' /home/sara-tolentino/nucleotide_blast_results.txt
+# The sequence ID with the highest percentages is: T010027234997 with a 91.965%
+
+#Question 5
+awk '$3 >= 90 {print $2}' /home/sara-tolentino/nucleotide_blast_results.txt > /home/sara-tolentino/most_similiar.txt
+
+#Question 6
+#Part a
+blastp -query /home/sara-tolentino/query_mystery_protein.fasta -db /home/sara-tolentino/mystery_proteins_db -evalue 1e-5 -max_target_seqs 15 -outfmt 7 -out /home/sara-tolentino/protein_blast_results.txt
+#Part b
+awk '$11 <= 1e-5 {print $2}' /home/sara-tolentino/protein_blast_results.txt
+
+#Question 7
+P010027090796
+P010027090798
+P010027073865
+P010027077695
+P010027071558
+P010027071553
+
+#Question 8
+#Coffea arabica 
+
+#Question 9
+#The specie is Gardenia jasminoides
+
+#Question 10
+# The gene is putative catalase
