@@ -1,0 +1,115 @@
+
+Assigment 6
+
+
+Using Ensembl answer the following quesLons:
+
+1.) How many splice variants does the human BRCA2 gene have?
+This gene has 19 transcripts (splice variants)
+
+2.) How many exons are in the longest splice variant(s) of BRCA2?
+The longest splice variant, its length is 11954 (bp) and has 27 exons.
+
+3.) How many introns are in the longest splice variant(s) of BRCA2?
+Has 26 introns
+
+4.) What chromosome is this gene on?
+Chromosome 13
+
+5.) What are the gene synonyms of BRCA2?
+BRCC2, FACD, FAD, FAD1, FANCD, FANCD1, XRCC11
+
+6.) How many orthologs of human BRCA2 are found in the African ostrich?
+Just 1
+
+7.) In the human hemoglobin transcript ENST00000330597.5 HBG1-201, what is the sequence of the second exon?
+
+GCTCCTGGTTGTCTACCCATGGACCCAGAGGTTCTTTGACAGCTTTGGCAACCTGTCCTC
+TGCCTCTGCCATCATGGGCAACCCCAAAGTCAAGGCACATGGCAAGAAGGTGCTGACTTC
+CTTGGGAGATGCCACAAAGCACCTGGATGATCTCAAGGGCACCTTTGCCCAGCTGAGTGA
+ACTGCACTGTGACAAGCTGCATGTGGATCCTGAGAACTTCAAG       
+
+8.) What is the length of the first intron of this hemoglobin transcript?
+122
+
+9.) How many pseudogenes are in the narwal genome annota=on (NGI_Narwhal_1, INSDC Assembly GCA_005190385.2)?
+At the NGI_Narwhal_1 there are 723 pseudogenes.
+
+Using Genomicus answer the following questions:
+
+10.) What two genes flank BRCA2 in the human genome?
+On the right side we have: N4BP2L1 (ENSG00000139597)
+On the left side we have: ZAR1L (ENSG00000189167) 
+
+11.) What genes flank the sonic hedgehog gene (shh) in the be4a (Siamese figh=ng) fish?
+On the right side: rbm33a (ENSBSLG00000001275) 
+On the left side:  rnf32 (ENSBSLG00000001314)
+
+
+12.) How many copies of shh are in the be4a (Siamese figh=ng) fish?
+None
+
+
+13.) How many copies of shh are in Atlantic salmon?
+shhb (ENSSSAG00000044082) has two copies
+shh (ENSSSAG00000068467) has two copies
+shha (ENSSSAG00000060795) has two copies
+shhb (ENSSSAG00000066636) has two copies
+
+Using NCBI answer the following questions:
+
+14.) How many genome assemblies are available for Bos taurus on NCBI?
+176
+
+15.) How many of the above assemblies are assembled into chromosomes?
+17
+
+16.) How many chromosomes does Bos taurus have excluding sex chromosomes?
+Bos taurus has 30 pairs of autosomes and one pair of sex chromosomes. To exclude sex chromosomes, count only the autosomes (30).
+
+17.) Which cow chromosome is the longest?
+The longest chromosome in Bos taurus is Chromosome 1, with a size of 158,534,110 base pairs (bp).
+
+18.) How many microRNAs are annotated on chromosome the assembly: Bos taurus ARS-UCD2.0?
+20
+
+19.) If I am interested in learning more about the gene associate with the transcript: NM_001104822, what is a good publica=on to read on PubMed?
+
+AUTHORS   Pasquier,J., Cabau,C., Nguyen,T., Jouanno,E., Severac,D.,
+            Braasch,I., Journot,L., Pontarotti,P., Klopp,C., Postlethwait,J.H.,
+            Guiguen,Y. and Bobe,J.
+  TITLE     Gene evolution and gene expression after whole genome duplication
+            in fish: the PhyloFish database
+  JOURNAL   BMC Genomics 17, 368 (2016)
+   PUBMED   27189481
+
+
+ AUTHORS   Yasumasu,S., Yamada,K., Akasaka,K., Mitsunaga,K., Iuchi,I.,
+            Shimada,H. and Yamagami,K.
+  TITLE     Isolation of cDNAs for LCE and HCE, two constituent proteases of
+            the hatching enzyme of Oryzias latipes, and concurrent expression
+            of their mRNAs during development
+  JOURNAL   Dev Biol 153 (2), 250-258 (1992)
+   PUBMED   1397682
+
+20.) What is the translated coding sequence of NM_001104822?
+
+        1 gtcagaagca tcagcattta aaaaaaaaaa aaaatggacc tgctggccaa agcatctgtg
+       61 ctgctgttgc tgctcctgag cctcagcaac gctcaaactg acaatatgga ggaagcagaa
+      121 aacggttcat caaaggagga aatagacgag tctgaactgg aggacgtgtc ctccatcatc
+      181 ttcagaatga acaacaactc tatggaggaa ctgttggaag gagatcttgt tcttcccaaa
+      241 accaggaatg ccatgaagtg ctttggcgct ccagatagct gccgctggcc aaagtcttcc
+      301 aatggcatcg tgaaggttcc ttatgtggtt agcgacaact atgaaagtga cgagaaggaa
+      361 accattcgga acgccatgaa ggagtttgca gaaaaaacct gcattcactt tgttcctcgc
+      421 aacaatgaga gggcctacct gagccttgaa cccagatttg gctgcaagtc tatgatgggc
+      481 tatgttggtg acaaacaagt ggtggtgctt cagcggtttg gctgcataaa gcacgccgtc
+      541 atccagcatg agctcctgca tgctctgggt ttctaccacg agcacactcg gagcgaccgc
+      601 gaccagcatg taaaaatcaa ctgggaaaac atcattaaag atttcacaca caactttgat
+      661 aagaatgata ccgacaatct gggcaccccg tatgactatg gctccatcat gcactatgga
+      721 agaactgcct ttggaaaaga cagaaaggag accataaccc ccatccctaa ccccaaagct
+      781 gccattggcc aaacagagag gatgtcggac atcgatatac ttcgagtcaa taagctttac
+      841 aaatgttgag atgacatgag ctgaaaatga tatttgatgc ttcatgtggg tgtacgacat
+      901 taaagtgaat cggtaaaggg gagcgtttat ccttgt
+
+Put all these answers in a text file and put it on your GitHub.
+Assignment 6: Online Browser Scavenger Hunt:
