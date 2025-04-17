@@ -1,0 +1,19 @@
+Assignment 8
+
+1) Species: Bos taurus (bosTau9)
+2) Gene:ZC3H10
+3) Target sequence:AAATGCACAGTTCCGCAATCAGG 
+   Genomic location: chr5: 57199983
+
+4)One primer pair 
+Left primer sequence:TCCCCATTTTGAATCCTATGAC	
+Left primer location:chr5:57200140-57200162
+Right primer sequence:GGTTAAAAGTGGCGACAGTACC
+Right primer location:chr5:57199899-57199921
+
+5)Knockout of ZC3H10 in Bos taurus would likely result in the following phenotypes:
+
+-Disrupted thermogenesis pathways, potentially impairing the animal's ability to adapt to cold environments.
+-Compromised immune function and dysregulation of immunity-related pathways.
+-Altered metabolism, particularly affecting glucose and lipid metabolism pathways.
+-Decreased adaptability to cold stress, as ZC3H10 plays a significant role in cattle adaptation to cold environments.
